@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Online Registration System </title>
+<link rel="stylesheet" href="../css/stylesheet.css">
+
+</head>
+<body>
+    <style>
+
+    .address{
+        width: 25%;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        
+    }
+    #image{
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        width: 30%;
+        }
+        #roles{
+            border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        width:30%;
+        }
+        #roles select{
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 7px;
+        }
+        #regbtn{
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgb(227, 14, 14);
+            color: whitesmoke;
+        }
+       
+    </style>
+    <center>
+    
+<h1>Online Registration System </h1>
+<hr/>
+<h2>Registration</h2>
+
+<form action="../api/register.php" method="post" enctype="multipart/form-data"><br/><br/>
+<input type="text" name="Name" class="address" placeholder="Name"/><br/><br/>
+<input type="number" name="Mobile" class="address" placeholder="Mobile"/><br/><br/>
+<input type="password" name="Password" class="address" placeholder="Password"/><br/><br/>
+<input type="text" class="address" name="Address" placeholder="Address"/><br/><br/>
+
+<div id="image">
+    Upload Image: <input type="file" name="File"/>
+    </div>
+    <br/><br/>
+<div id="roles"> 
+    Select Role: <select name="Role" id="roles select"> 
+    <option>Select Your Role</option>        
+    <option value="1">Voter</option>  
+    <option value="2">Group</option>  
+</select>
+</div><br/><br/>
+
+<button id="regbtn">Register</button><br/><br/>
+Already Register <a href="../">Login Here</a>
+
+
+</form>
+</center>
+</body>
+
+</html>

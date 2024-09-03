@@ -1,0 +1,27 @@
+body{
+  
+    background-color: rgb(156, 234, 156);
+}
+#headersection{
+    padding: 10px;
+}
+#headersection h1{
+    font-family: cursive;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.DropDown{
+    padding: 10px;
+    border-radius: 5px;
+    width: 15%;
+}
+#lgnbtn{
+   padding: 10px;
+   border-radius: 5px;
+   background-color: rgb(61, 61, 140);
+   color: aliceblue;
+   width: 10%;
+}
